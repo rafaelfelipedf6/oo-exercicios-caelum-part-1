@@ -33,16 +33,16 @@ public class Agenda
             {
 
             case 1:
-                Contato umContato = new Contato();
 
                 System.out.println("Digite o nome do contato: ");
                 String umNome = lerTeclado.nextLine();
-                umContato.setNome(umNome);
+		
                 System.out.println("\n");
 
                 System.out.println("Digite o número do contato: ");
                 String umTelefone = lerTeclado.nextLine();
-                umContato.setTelefone(umTelefone);
+                
+		Contato umContato = new Pessoal(umNome, umTelefone);
                 System.out.println("\n");
 
                 System.out.println("Digite o sexo do contato : 0-MASC , 1-FEM ");
