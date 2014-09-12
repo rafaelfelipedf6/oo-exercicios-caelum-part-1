@@ -13,7 +13,7 @@ public class TestaFuncionario
 
 	//Criando o novo funcionario para Comparar os Dados inseridos pelo TECLADO
 
-	funcionario func2 = new funcionario();   
+	funcionario func2 = func1 ;  // Quando é inserido esta linha de código os Funcionarios são iguais
 
 
 		//fazendo leitura de umNome no teclado
@@ -38,31 +38,14 @@ public class TestaFuncionario
 		func1.setRg(umRg);
 
 
-		//fazendo leitura dos Atributos no teclado do Funcionario 2
-		String umNome1 = "João";
-		func2.setNome(umNome1);
-
-		String umDepartamento1 ="Eletrônica";
-		func2.setDepartamento(umDepartamento1);
-
 	
-		double umSalario1 = 1000;
-		func2.setSalario(umSalario1);
-		
-		
-		String umaData1 = "20";
-		func2.setDatadeEntrada(umaData1);
 
-		
-		String umRg1 = "2222222";
-		func2.setRg(umRg1);
 
-		//Os funcionários são sempre diferentes mesmo que as informações sejam iguais		
-		
 		if(func1 == func2){
 			System.out.println("São Iguais");}
 		else{
 			System.out.println("São diferentes");
 		}
+
 	}
 }
